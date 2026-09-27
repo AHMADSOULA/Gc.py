@@ -1,0 +1,6 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "deploy": {
+    "startCommand": "python3 -m playwright install-deps && python3 -m playwright install && xvfb-run -a python3 GC.py"
+  }
+}
