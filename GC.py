@@ -15,9 +15,9 @@ import shutil
 
 
 #===============================
-API_ID = 'لٱ تنسه تملي هذني'
-API_HASH = 'الهاش هنا'
-BOT_TOKEN = 'توكن بوتك'
+API_ID = '35339972'
+API_HASH = 'fcbb29c0cdd4fbeb66ba017020e721cc'
+BOT_TOKEN = '8842617850:AAHtrQf9ZnXrlXZOYOx8ti5Gk1_Dq5OrPoQ'
 
 client = TelegramClient('AM2_D3', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
