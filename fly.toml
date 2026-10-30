@@ -1,0 +1,20 @@
+app = "bot-ahmed2027"
+primary_region = "ams"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  app = "python main.py"
+
+# Telegram long-polling worker: no public HTTP service or public IP is needed.
+# Keep one machine to avoid Telegram getUpdates Conflict errors.
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "2gb"
+
+[mounts]
+  source = "bot_data"
+  destination = "/data"
